@@ -1,0 +1,89 @@
+/* 1. Global Reset & Top Space Fix */
+.block-container {
+    padding-top: 1rem !important;
+    padding-bottom: 0rem !important;
+}
+
+header {
+    background-color: rgba(0,0,0,0) !important;
+}
+
+/* 2. FORCE Sidebar Look (Works in Dark & Light Mode) */
+[data-testid="stSidebar"] {
+    background-color: #ffffff !important;
+}
+
+/* Force all text in sidebar to be dark */
+[data-testid="stSidebar"] h1, 
+[data-testid="stSidebar"] h2, 
+[data-testid="stSidebar"] h3, 
+[data-testid="stSidebar"] p, 
+[data-testid="stSidebar"] span, 
+[data-testid="stSidebar"] label,
+[data-testid="stSidebar"] div {
+    color: #1e1e1e !important;
+}
+
+/* 3. FIX THE DROPDOWN (Selectbox) - Always light bg, dark text */
+div[data-baseweb="select"] > div {
+    background-color: #f1f3f5 !important;
+    color: #1e1e1e !important;
+    border: 1px solid #ced4da !important;
+}
+
+/* 4. MAIN DASHBOARD CARDS */
+.card {
+    background: rgba(255, 255, 255, 0.98);
+    border-radius: 18px;
+    padding: 22px;
+    margin-bottom: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    color: #1a202c !important;
+}
+
+.card h1, .card h2, .card h3, .card p, .card small {
+    color: #1a202c !important;
+}
+
+/* 5. LEGEND TAGS */
+.deficiency-tag {
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin: 8px 0;
+    display: block;
+    font-weight: 600;
+    font-size: 0.85rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* 6. UPLOAD BOX (Wait State) */
+.upload-box {
+    background: rgba(255, 255, 255, 0.15);
+    border: 2px dashed rgba(255, 255, 255, 0.8);
+    border-radius: 24px;
+    padding: 80px 20px;
+    text-align: center;
+    color: white !important;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    margin-top: 20px;
+}
+
+.upload-box h2, .upload-box p {
+    color: white !important;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+/* 7. CONFIDENCE BAR */
+.confidence-bar-bg {
+    background-color: #e2e8f0;
+    height: 14px;
+    border-radius: 7px;
+    margin-top: 12px;
+    overflow: hidden;
+}
+
+.confidence-bar-fill {
+    background: linear-gradient(90deg, #48bb78, #38a169);
+    height: 100%;
+}
